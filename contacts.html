@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=divice-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.min.css">
     <title>Главная</title>
 </head>
 <body>
-    <header>
+    <header class="headline">
         <div class="container flex-row">
-            <nav>
+            <nav class="navigation">
                 <a href="./index.html" class="logo"><span>Web</span>Studio</a>
                 <ul class="main-links">
                     <li><a href="./index.html">Студия</a></li>
@@ -20,14 +20,14 @@
                 </ul>
             </nav>
             <ul class="main-mail-tel">
-                <li><a href="mailto:info@devstudio.com">
+                <li><a class="main-mail-tel__link" href="mailto:info@devstudio.com">
                         <svg class="main-mail">
                             <use href="./img/sprite.svg#envelope"></use>
                         </svg>
                         info@devstudio.com
                     </a>
                 </li>
-                <li><a href="tel:+380961111111">
+                <li><a class="main-mail-tel__link"  href="tel:+380961111111">
                         <svg class="main-tel">
                             <use href="./img/sprite.svg#smartphone"></use>
                         </svg>
@@ -50,39 +50,43 @@
                 <address>
                     <ul class="flex-col">
                         <li class="address"> г. Киев, пр-т Леси Украинки, 26</li>
-                        <li class="footer-mail-tel"><a href="mailto:info@example.com">info@example.com</a></li>
-                        <li class="footer-mail-tel"><a href="tel:+380991111111">+38 099 111 11 11</a></li>
+                        <li class="footer-mail-tel">
+                            <a class="footer-mail-tel__link" href="mailto:info@example.com">info@example.com</a>
+                        </li>
+                        <li class="footer-mail-tel">
+                            <a class="footer-mail-tel__link" href="tel:+380991111111">+38 099 111 11 11</a>
+                        </li>
                     </ul>
                 </address>
             </div>
                 
             <div class="footer-soc">
-                <span>присоединяйтесь</span>
-                <ul class="flex-row">
-                    <li>
-                        <a class="footer-soclink" href="instagram.com">
-                            <svg class="soc-svg">
+                <span class="footer-soc__span">присоединяйтесь</span>
+                <ul class="flex-row social">
+                    <li class="social__item">
+                        <a class="social__link social__link--footer" href="instagram.com">
+                            <svg class="social__ico">
                                 <use href="./img/sprite.svg#instagram"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
-                        <a class="footer-soclink" href="twitter.com">
-                            <svg class="soc-svg">
+                    <li class="social__item">
+                        <a class="social__link social__link--footer" href="twitter.com">
+                            <svg class="social__ico">
                                 <use href="./img/sprite.svg#twitter"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
-                        <a class="footer-soclink" href="facebook.com">
-                            <svg class="soc-svg">
+                    <li class="social__item">
+                        <a class="social__link social__link--footer" href="facebook.com">
+                            <svg class="social__ico">
                                 <use href="./img/sprite.svg#facebook"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
-                        <a class="footer-soclink" href="linkedin.com">
-                            <svg class="soc-svg">
+                    <li class="social__item">
+                        <a class="social__link social__link--footer" href="linkedin.com">
+                            <svg class="social__ico">
                                 <use href="./img/sprite.svg#linkedin"></use>
                             </svg>
                         </a>
@@ -90,11 +94,11 @@
                 </ul>
             </div>
 
-            <form class="footer-newslatter">
-                <span>Подпишитесь на рассылку</span>
-                <input name="subscribe" type="text" placeholder="E-mail">
-                <button class="newslatter-btn">Подписаться
-                    <svg class="newslatter-btn-ico">
+            <form class="newslatter">
+                <span class="newslatter__label">Подпишитесь на рассылку</span>
+                <input class="newslatter__input" name="subscribe" type="text" placeholder="E-mail">
+                <button class="newslatter__btn">Подписаться
+                    <svg class="newslatter__ico">
                         <use href="./img/sprite.svg#paperplane"></use>
                     </svg>
                 </button>
